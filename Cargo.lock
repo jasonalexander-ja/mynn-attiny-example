@@ -3,12 +3,13 @@
 version = 3
 
 [[package]]
-name = "at2313-blink"
+name = "at85-mynn"
 version = "0.1.0"
 dependencies = [
  "attiny-hal",
  "avr-device",
  "embedded-hal 0.2.7",
+ "mynn",
  "nb 0.1.3",
  "panic-halt",
  "proc-macro2",
@@ -120,6 +121,33 @@ name = "embedded-storage"
 version = "0.2.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "723dce4e9f25b6e6c5f35628e144794e5b459216ed7da97b7c4b66cdb3fa82ca"
+
+[[package]]
+name = "fastrand"
+version = "2.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "9fc0510504f03c51ada170672ac806f1f105a88aa97a5281117e1ddc3368e51a"
+
+[[package]]
+name = "libm"
+version = "0.2.8"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "4ec2a862134d2a7d32d7983ddcdd1c4923530833c9f2ea1a44fc5fa473989058"
+
+[[package]]
+name = "micromath"
+version = "2.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "c3c8dda44ff03a2f238717214da50f65d5a53b45cd213a7370424ffdb6fae815"
+
+[[package]]
+name = "mynn"
+version = "0.1.0"
+dependencies = [
+ "fastrand",
+ "libm",
+ "micromath",
+]
 
 [[package]]
 name = "nb"
