@@ -1,8 +1,5 @@
 [build]
 target = "avr-specs/avr-attiny85.json"
 
-[target.'cfg(target_arch = "avr")']
-runner = "avrdude -c arduino_as_isp -p t85 -P /dev/tty.usbmodem11201 -U flash:w:\"target/avr-attiny85/release/mini-pov.elf\":a"
-
 [unstable]
 build-std = ["core"]
