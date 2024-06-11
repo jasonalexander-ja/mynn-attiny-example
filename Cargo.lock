@@ -142,7 +142,9 @@ checksum = "c3c8dda44ff03a2f238717214da50f65d5a53b45cd213a7370424ffdb6fae815"
 
 [[package]]
 name = "mynn"
-version = "0.1.0"
+version = "0.1.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "d0d42855213839da4d4b23a854f622989f051e569e549f8e906d9f4d8e389fcd"
 dependencies = [
  "fastrand",
  "libm",
