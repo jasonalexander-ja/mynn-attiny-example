@@ -1,0 +1,8 @@
+[build]
+target = "avr-specs/avr-attiny2313.json"
+
+[target.'cfg(target_arch = "avr")']
+runner = "avrdude -c arduino_as_isp -p t2313 -P /dev/tty.usbmodem11201 -U flash:w:\"target/avr-attiny2313/release/mini-pov.elf\":a"
+
+[unstable]
+build-std = ["core"]
