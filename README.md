@@ -6,7 +6,7 @@ Proof of concept for using my hobby built [mynn](https://github.com/jasonalexand
 Simple pre-defined model approximating the output of a XOR gate, feeding it data read from input pins and assigning the output pins based on the output of the network. 
 
 ## Build Instructions
-1. Install prerequisites as described in the [`avr-hal` README] (`avr-gcc`, `avr-libc`, `avrdude`, [`ravedude`]).
+1. Install prerequisites as described in the [avr-hal] readme (https://github.com/jasonalexander-ja/mynn-attiny-example) (`avr-gcc`, `avr-libc`, `avrdude`).
 
 2. Run `cargo build --release` to build the firmware.
 
